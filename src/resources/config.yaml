@@ -1,0 +1,7 @@
+environments:
+  dev: "https://automationexercise.com"
+  prod: "https://automationexercise.com"
+
+browsers:
+  chrome: "/Users/jackrosesmile/Documents/PythonProject/MyTestFramework/src/webdriver/chrome/chromedriver"
+  firefox: "path/to/firefoxdriver"

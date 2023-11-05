@@ -1,6 +1,10 @@
 import pytest
-import yaml
+import logging
+import os
 from src.base_layer.driver_manager import DriverManager
+from src.utils_layer.file_handler import read_yaml
+from src.utils_layer.construct_full_path import get_project_root
+from _pytest.logging import LogCaptureFixture
 
 
 def pytest_addoption(parser):
@@ -13,8 +17,7 @@ def config(request):
     env = request.config.getoption("--env")
     browse = request.config.getoption("--browse")
 
-    with open("src/resources/config.yaml", 'r') as f:
-        config = yaml.safe_load(f)
+    config = read_yaml("src/resources/config.yaml")
 
     env_config = config['environments'].get(env)
     if not env_config:
@@ -24,7 +27,8 @@ def config(request):
     if not browse_config:
         pytest.fail(f'Invalid browser: {browse}')
 
-    return {"env": env_config, "browse": {"type": browse, "path": browse_config}}
+    return {"env": env_config,
+            "browse": {"type": browse, "path": browse_config['webdriver'], "binary_path": browse_config['binary_path']}}
 
 
 @pytest.fixture(scope='session')

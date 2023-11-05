@@ -8,11 +8,10 @@ class DriverManager:
         self.driver = None
         browser_type = config['browse']['type']
         driver_path = config['browse']['path']
-
+        binary_path = config['browse']['binary_path']
         if browser_type.lower() == "chrome":
             chrome_options = Options()
-            chrome_options.binary_location = ("/Applications/Google Chrome for Testing.app/Contents/MacOS/Google "
-                                              "Chrome for Testing")
+            chrome_options.binary_location = binary_path
             service = Service(executable_path=driver_path)
             self.driver = webdriver.Chrome(service=service, options=chrome_options)
         elif browser_type.lower() == "firefox":

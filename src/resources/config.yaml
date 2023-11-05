@@ -3,5 +3,9 @@ environments:
   prod: "https://automationexercise.com"
 
 browsers:
-  chrome: "/Users/jackrosesmile/Documents/PythonProject/MyTestFramework/src/webdriver/chrome/chromedriver"
-  firefox: "path/to/firefoxdriver"
+  chrome:
+    webdriver: "/Users/jackrosesmile/Documents/PythonProject/MyTestFramework/src/webdriver/chrome/chromedriver"
+    binary_path: "/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  firefox:
+    webdriver: "path/to/firefoxdriver"
+    binary_path: "path/to/firefox"

@@ -1,0 +1,18 @@
+environments:
+  dev: "https://automationexercise.com"
+  sit: "https://automationexercise.com"
+  prod: "https://automationexercise.com"
+
+browsers:
+  chrome:
+    webdriver: "/Users/shiqiang.ye/Documents/PythonProject/MyTestFramework/webdriver/chrome/chromedriver"
+    binary_path: "/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  edge:
+    webdriver:
+    binary_path:
+  safari:
+    webdriver:
+    binary_path:
+  firefox:
+    webdriver:
+    binary_path:

@@ -1,7 +1,7 @@
 import pytest
-from src.common.driver_manager import DriverManager
-from src.common.file_handler import read_yaml
-from src.common.path import get_project_root
+from common.driver_manager import DriverManager
+from common.file_handler import read_yaml
+from common.path import get_project_root
 
 
 def pytest_addoption(parser):

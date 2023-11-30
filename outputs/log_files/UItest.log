@@ -1,0 +1,80 @@
+2023-11-30 14:57:10.517 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 14:57:10.531 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 14:57:11.210 | INFO     | src.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 14:57:11.230 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 14:57:11.350 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 14:57:11.411 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 14:57:11.454 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 14:57:11.462 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 14:57:14.918 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 14:57:14.923 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 14:57:15.818 | INFO     | src.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 14:57:15.850 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 14:57:15.898 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 14:57:15.942 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 14:57:16.022 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 14:57:16.047 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 16:27:48.362 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 16:27:48.376 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 16:27:49.510 | INFO     | src.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 16:27:49.532 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 16:27:49.730 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 16:27:49.739 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 16:27:49.780 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 16:27:49.789 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 16:27:57.408 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 16:27:57.416 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 16:27:58.312 | INFO     | src.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 16:27:58.329 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 16:27:58.368 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 16:27:58.462 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 16:27:58.525 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 16:27:58.537 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:34:58.257 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:34:58.269 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:34:59.163 | INFO     | src.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 21:34:59.184 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 21:34:59.302 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 21:34:59.310 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 21:34:59.355 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:34:59.363 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:35:08.190 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:35:08.195 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:35:09.090 | INFO     | src.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 21:35:09.106 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 21:35:09.139 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 21:35:09.178 | INFO     | src.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 21:35:09.213 | INFO     | src.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:35:09.218 | INFO     | src.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:48:29.910 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:48:29.922 | INFO     | MyTestFramework.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:48:30.808 | INFO     | MyTestFramework.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 21:48:30.830 | INFO     | MyTestFramework.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 21:48:30.957 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 21:48:30.965 | INFO     | MyTestFramework.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 21:48:31.004 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:48:31.012 | INFO     | MyTestFramework.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:48:34.578 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:48:34.586 | INFO     | MyTestFramework.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:48:35.619 | INFO     | MyTestFramework.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 21:48:35.635 | INFO     | MyTestFramework.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 21:48:35.693 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 21:48:35.739 | INFO     | MyTestFramework.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 21:48:35.777 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:48:35.782 | INFO     | MyTestFramework.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:50:02.515 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:50:02.527 | INFO     | MyTestFramework.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:50:04.687 | INFO     | MyTestFramework.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 21:50:04.706 | INFO     | MyTestFramework.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 21:50:04.798 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 21:50:04.809 | INFO     | MyTestFramework.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 21:50:04.847 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:50:04.856 | INFO     | MyTestFramework.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:50:08.729 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:50:08.735 | INFO     | MyTestFramework.common.base_page:click:29 - 点击元素：('css selector', 'a i.fa.fa-lock')
+2023-11-30 21:50:09.831 | INFO     | MyTestFramework.common.base_page:find_element:16 - 等待元素可见：('name', 'email'), 等待时间：3秒。
+2023-11-30 21:50:09.846 | INFO     | MyTestFramework.common.base_page:input_text:38 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-11-30 21:50:09.943 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('name', 'password')
+2023-11-30 21:50:09.948 | INFO     | MyTestFramework.common.base_page:input_text:38 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-11-30 21:50:09.987 | INFO     | MyTestFramework.common.base_page:find_element:19 - 尝试定位元素：('css selector', '[data-qa="login-button"]')
+2023-11-30 21:50:09.993 | INFO     | MyTestFramework.common.base_page:click:29 - 点击元素：('css selector', '[data-qa="login-button"]')

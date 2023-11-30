@@ -1,8 +1,0 @@
-[32m2023-11-29 14:45:45.842[0m | [1mINFO    [0m | [36msrc.common.base_page[0m:[36mfind_element[0m:[36m19[0m - [1m尝试定位元素：('css selector', 'a i.fa.fa-lock')[0m
-[32m2023-11-29 14:45:45.857[0m | [1mINFO    [0m | [36msrc.common.base_page[0m:[36mclick[0m:[36m29[0m - [1m点击元素：('css selector', 'a i.fa.fa-lock')[0m
-[32m2023-11-29 14:45:46.508[0m | [1mINFO    [0m | [36msrc.common.base_page[0m:[36mfind_element[0m:[36m16[0m - [1m等待元素可见：('name', 'email'), 等待时间：3秒。[0m
-[32m2023-11-29 14:45:46.530[0m | [1mINFO    [0m | [36msrc.common.base_page[0m:[36minput_text[0m:[36m38[0m - [1m在元素：('name', 'email') 中输入文本125266480@qq.com。[0m
-[32m2023-11-29 14:45:46.705[0m | [1mINFO    [0m | [36msrc.common.base_page[0m:[36mfind_element[0m:[36m19[0m - [1m尝试定位元素：('name', 'password')[0m
-[32m2023-11-29 14:45:46.714[0m | [1mINFO    [0m | [36msrc.common.base_page[0m:[36minput_text[0m:[36m38[0m - [1m在元素：('name', 'password') 中输入文本yes19900624。[0m
-[32m2023-11-29 14:45:46.751[0m | [1mINFO    [0m | [36msrc.common.base_page[0m:[36mfind_element[0m:[36m19[0m - [1m尝试定位元素：('css selector', '[data-qa="login-button"]')[0m
-[32m2023-11-29 14:45:46.759[0m | [1mINFO    [0m | [36msrc.common.base_page[0m:[36mclick[0m:[36m29[0m - [1m点击元素：('css selector', '[data-qa="login-button"]')[0m

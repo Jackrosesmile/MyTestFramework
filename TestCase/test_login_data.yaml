@@ -1,0 +1,7 @@
+login_account:
+  - username: "125266480@qq.com"
+    password: "yes19900624"
+    assertname: "登陆成功"
+  - username: "125266480@qq.com"
+    password: "yes19900625"
+    assertname: "密码错误"

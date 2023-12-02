@@ -3,19 +3,24 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPage(BasePage):
-    LOGIN = (By.CSS_SELECTOR, 'a i.fa.fa-lock')
     USERNAME_INPUT = (By.NAME, 'email')
     PASSWORD_INPUT = (By.NAME, 'password')
-    LOGIN_BUTTON = (By.CSS_SELECTOR, '[data-qa="login-button"]')
+    LOGIN_BUTTON = (By.XPATH, '//*[@data-qa="login-button"]')
+    LOGIN_CORRECT = (By.XPATH, "//*[contains(text(),'Logged in as')]")
+    LOGIN_INCORRECT = (By.XPATH, "//p[text()='Your email or password is incorrect!']")
 
-    def click_login(self, wait_time=None):
-        self.click(self.LOGIN, wait_time)
+    def input_username(self, username, **kwargs):
+        self.input_text(self.USERNAME_INPUT, username, **kwargs)
 
-    def input_username(self, username, wait_time=None):
-        self.input_text(self.USERNAME_INPUT, username, wait_time)
+    def input_password(self, password, **kwargs):
+        self.input_text(self.PASSWORD_INPUT, password, **kwargs)
 
-    def input_password(self, password, wait_time=None):
-        self.input_text(self.PASSWORD_INPUT, password, wait_time)
+    def click_login_button(self, **kwargs):
+        self.click(self.LOGIN_BUTTON, **kwargs)
 
-    def click_login_button(self, wait_time=None):
-        self.click(self.LOGIN_BUTTON, wait_time)
+    def get_login_correct(self, **kwargs):
+        return self.get_text(self.LOGIN_CORRECT, **kwargs)
+
+    def get_login_incorrect(self, **kwargs):
+        return self.get_text(self.LOGIN_INCORRECT, **kwargs)
+

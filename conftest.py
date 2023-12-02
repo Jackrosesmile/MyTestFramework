@@ -1,4 +1,8 @@
+import allure
 import pytest
+
+from .business_page.home_page import HomePage
+from .business_page.login_page import LoginPage
 from common.driver_manager import DriverManager
 from common.file_handler import read_yaml
 from common.path import get_project_root
@@ -23,7 +27,7 @@ def config(request):
     config_path = get_project_root('config_file', 'config.yaml')
     config = read_yaml(config_path)
     # 获取环境配置
-    env_config = config['environments'].get(env)
+    env_config = config['environments'][f'{env}'].get('url')
     # 如果环境配置不存在，则返回错误信息并停止测试
     if not env_config:
         pytest.fail(f'不存在的测试环境: {env}')
@@ -34,15 +38,25 @@ def config(request):
     if not browse_config:
         pytest.fail(f'不存在的浏览器: {browse}')
 
+    # 获取用户名和密码
+    username = config['environments'][f'{env}'].get('username')
+    password = config['environments'][f'{env}'].get('password')
+
+    if not username:
+        pytest.fail('用户名不存在')
+
+    if not password:
+        pytest.fail('密码不存在')
+
     # 返回配置信息
-    return {"env": env_config,
+    return {"env": env_config, "username": username, "password": password,
             "browse": {"type": browse, "path": browse_config['webdriver'], "binary_path": browse_config['binary_path']}}
 
 
 driver = None
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='function')
 def driver_manager(config):
     global driver
     # 创建一个 DriverManager 对象，并传入配置参数
@@ -55,3 +69,30 @@ def driver_manager(config):
     yield driver
     # 退出 WebDriver 对象
     driver.quit()
+
+
+@pytest.fixture(scope='function')
+def init_login(driver_manager, config):
+    username = config['username']
+    password = config['password']
+    driver_manager.get(config['env'])
+    login = LoginPage(driver_manager)
+    home_page = HomePage(driver_manager)
+    home_page.click_login()
+    login.input_username(username)
+    login.input_password(password)
+    login.click_login_button()
+    yield driver_manager
+
+
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    global driver
+    # 获取测试用例执行结果-yield（pytest内置变量）
+    out_come = yield
+    res = out_come.get_result()
+    # 监听到失败的情况
+    if res.failed:
+        # 获取失败截图
+        # attach这个函数需要传递三个参数，第一个：二进制数据 第二个：附件的名字  第三个：附件类型
+        allure.attach(driver.get_screenshot_as_png(), '失败截图', allure.attachment_type.PNG)

@@ -41,3 +41,7 @@ report_path = Path(__file__).parent.parent / "outputs" / "report_files"
 # allure报告路径
 allure_path = Path(__file__).parent.parent / "outputs" / "allure_report"
 
+
+# 上传文件路径
+def get_upload_path(filename):
+    return Path(__file__).parent.parent / "inputs" / filename

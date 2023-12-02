@@ -1,7 +1,16 @@
 environments:
-  dev: "https://automationexercise.com"
-  sit: "https://automationexercise.com"
-  prod: "https://automationexercise.com"
+  dev:
+    url: "https://automationexercise.com"
+    username: "125266480@qq.com"
+    password: "yes19900624"
+  sit:
+    url: "https://automationexercise.com"
+    username: "125266480@qq.com"
+    password: "yes19900624"
+  prod:
+    url: "https://automationexercise.com"
+    username: "125266480@qq.com"
+    password: "yes19900624"
 
 browsers:
   chrome:

@@ -33,7 +33,7 @@ datas_dir = Path(__file__).absolute().parent.parent / "TestCase"
 # driver目录路径
 driver_dir = Path(__file__).parent.parent / "webdriver"
 # 配置目录路径
-config_dir = Path(__file__).parent.parent / "config"
+config_dir = Path(__file__).parent.parent / "config_file"
 # log日志路径
 log_path = Path(__file__).parent.parent / "outputs" / "log_files" / "UItest.log"
 # 报告文件路径
@@ -45,3 +45,7 @@ allure_path = Path(__file__).parent.parent / "outputs" / "allure_report"
 # 上传文件路径
 def get_upload_path(filename):
     return Path(__file__).parent.parent / "inputs" / filename
+
+
+def get_config_path(filename):
+    return Path(__file__).parent.parent / "config_file" / filename

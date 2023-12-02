@@ -1,11 +1,11 @@
 import allure
 import pytest
-
+import platform
 from .business_page.home_page import HomePage
 from .business_page.login_page import LoginPage
 from common.driver_manager import DriverManager
 from common.file_handler import read_yaml
-from common.path import get_project_root
+from common.path import get_project_root, get_config_path
 
 
 def pytest_addoption(parser):
@@ -27,9 +27,9 @@ def config(request):
     config_path = get_project_root('config_file', 'config.yaml')
     config = read_yaml(config_path)
     # 获取环境配置
-    env_config = config['environments'][f'{env}'].get('url')
+    url = config['environments'][f'{env}'].get('url')
     # 如果环境配置不存在，则返回错误信息并停止测试
-    if not env_config:
+    if not url:
         pytest.fail(f'不存在的测试环境: {env}')
 
     # 获取浏览器配置
@@ -49,7 +49,7 @@ def config(request):
         pytest.fail('密码不存在')
 
     # 返回配置信息
-    return {"env": env_config, "username": username, "password": password,
+    return {"env": env, "url": url, "username": username, "password": password,
             "browse": {"type": browse, "path": browse_config['webdriver'], "binary_path": browse_config['binary_path']}}
 
 
@@ -66,6 +66,7 @@ def driver_manager(config):
     # 使用 WebDriver 对象打开配置中的环境 URL
     # driver.get(config['env'])
     driver.maximize_window()
+    generate_environment_file(driver, config)
     yield driver
     # 退出 WebDriver 对象
     driver.quit()
@@ -75,7 +76,7 @@ def driver_manager(config):
 def init_login(driver_manager, config):
     username = config['username']
     password = config['password']
-    driver_manager.get(config['env'])
+    driver_manager.get(config['url'])
     login = LoginPage(driver_manager)
     home_page = HomePage(driver_manager)
     home_page.click_login()
@@ -96,3 +97,22 @@ def pytest_runtest_makereport(item, call):
         # 获取失败截图
         # attach这个函数需要传递三个参数，第一个：二进制数据 第二个：附件的名字  第三个：附件类型
         allure.attach(driver.get_screenshot_as_png(), '失败截图', allure.attachment_type.PNG)
+
+
+def generate_environment_file(driver, config):
+    browser_version = driver.execute_script("return navigator.userAgent;")
+    os_info = platform.system() + " " + platform.version()
+    file_path = get_config_path("environment.properties")
+    with open(str(file_path), "w") as file:
+        file.write(f"Browser={browser_version}\n")
+        file.write(f"Operating.System={os_info}\n")
+        file.write(f"Environment={config['env']},URL={config['url']}\n")
+        # 添加其他需要的环境信息
+
+# 使用 PyTest 的钩子函数在测试会话开始时生成环境信息
+# @pytest.hookimpl(tryfirst=True)
+# def pytest_sessionstart(session):
+#     # 临时获取 WebDriver 实例
+#     global driver
+#     # 生成环境信息文件
+#     generate_environment_file(driver)

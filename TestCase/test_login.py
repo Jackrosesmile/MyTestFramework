@@ -14,7 +14,7 @@ class TestLogin:
         username = test_input['username']
         password = test_input['password']
         assertname = test_input['assertname']
-        driver_manager.get(config['env'])
+        driver_manager.get(config['url'])
         login_page = LoginPage(driver_manager)
         home_page = HomePage(driver_manager)
         assert home_page.get_home_logo()

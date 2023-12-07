@@ -106,7 +106,7 @@ def generate_environment_file(driver, config):
     with open(str(file_path), "w") as file:
         file.write(f"Browser={browser_version}\n")
         file.write(f"Operating.System={os_info}\n")
-        file.write(f"Environment={config['env']},URL={config['url']}\n")
+        file.write(f"Environment={config['env'].upper()},URL={config['url']}\n")
         # 添加其他需要的环境信息
 
 # 使用 PyTest 的钩子函数在测试会话开始时生成环境信息

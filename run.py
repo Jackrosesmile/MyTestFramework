@@ -15,7 +15,7 @@ logger.add(sink=log_path,
            compression="zip",
            retention=3)
 
-pytest.main(["-v", "-s",
+pytest.main(["-v", "-s", "-n 2",
              "--alluredir=outputs/report_files",
              "--clean-alluredir"])
 

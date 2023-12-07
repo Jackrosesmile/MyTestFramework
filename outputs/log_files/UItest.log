@@ -290,3 +290,52 @@ Stacktrace:
 2023-12-03 00:52:42.795 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', '//*[@data-qa="login-button"]')
 2023-12-03 00:52:43.585 | INFO     | MyTestFramework.common.base_page:get_text:92 - 获取元素的文本:('xpath', "//p[text()='Your email or password is incorrect!']")
 2023-12-03 00:52:43.586 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', "//p[text()='Your email or password is incorrect!']"), 等待时间：20秒。
+2023-12-03 01:35:24.944 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', "//a[@href='/login']"), 等待时间：20秒。
+2023-12-03 01:35:24.977 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', "//a[@href='/login']")
+2023-12-03 01:35:26.630 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('name', 'email'), 等待时间：20秒。
+2023-12-03 01:35:26.673 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-12-03 01:35:26.836 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('name', 'password'), 等待时间：20秒。
+2023-12-03 01:35:26.865 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-12-03 01:35:26.900 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', '//*[@data-qa="login-button"]'), 等待时间：20秒。
+2023-12-03 01:35:26.921 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', '//*[@data-qa="login-button"]')
+2023-12-03 01:35:30.316 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', "//a[@href='/contact_us']"), 等待时间：20秒。
+2023-12-03 01:35:30.359 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', "//a[@href='/contact_us']")
+2023-12-03 01:35:32.260 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', '//form[@id="contact-us-form"]//input[@type="text" and @name="name"]'), 等待时间：20秒。
+2023-12-03 01:35:32.294 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('xpath', '//form[@id="contact-us-form"]//input[@type="text" and @name="name"]') 中输入文本纹身大猫。
+2023-12-03 01:35:32.387 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', '//form[@id="contact-us-form"]//input[@type="email" and @name="email"]'), 等待时间：20秒。
+2023-12-03 01:35:32.421 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('xpath', '//form[@id="contact-us-form"]//input[@type="email" and @name="email"]') 中输入文本125266480@qq.com。
+2023-12-03 01:35:32.471 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', '//form[@id="contact-us-form"]//input[@type="text" and @name="subject"]'), 等待时间：20秒。
+2023-12-03 01:35:32.538 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('xpath', '//form[@id="contact-us-form"]//input[@type="text" and @name="subject"]') 中输入文本登陆成功。
+2023-12-03 01:35:32.569 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('id', 'message'), 等待时间：20秒。
+2023-12-03 01:35:32.595 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('id', 'message') 中输入文本125266480。
+2023-12-03 01:35:32.629 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', '//form[@id="contact-us-form"]//input[@type="file" and @name="upload_file"]'), 等待时间：20秒。
+2023-12-03 01:35:32.670 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', '//form[@id="contact-us-form"]//input[@type="submit" and @name="submit"]'), 等待时间：20秒。
+2023-12-03 01:35:32.689 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', '//form[@id="contact-us-form"]//input[@type="submit" and @name="submit"]')
+2023-12-03 01:35:32.737 | INFO     | MyTestFramework.common.base_page:element_is_existence:97 - 判断元素是否存在:('xpath', '//h2[@class="title text-center"]/following-sibling::div[text()="Success! Your details have been submitted successfully."]')
+2023-12-03 01:35:32.737 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', '//h2[@class="title text-center"]/following-sibling::div[text()="Success! Your details have been submitted successfully."]'), 等待时间：20秒。
+2023-12-03 01:35:38.446 | INFO     | MyTestFramework.common.base_page:element_is_existence:97 - 判断元素是否存在:('xpath', "//*[@id='header']//img[@src='/static/images/home/logo.png']")
+2023-12-03 01:35:38.447 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', "//*[@id='header']//img[@src='/static/images/home/logo.png']"), 等待时间：20秒。
+2023-12-03 01:35:38.470 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', "//a[@href='/login']"), 等待时间：3秒。
+2023-12-03 01:35:38.495 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', "//a[@href='/login']")
+2023-12-03 01:35:39.261 | INFO     | MyTestFramework.common.base_page:find_element:37 - 尝试定位元素：('name', 'email')
+2023-12-03 01:35:39.295 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-12-03 01:35:39.476 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('name', 'password'), 等待时间：20秒。
+2023-12-03 01:35:39.506 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('name', 'password') 中输入文本yes19900624。
+2023-12-03 01:35:39.541 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', '//*[@data-qa="login-button"]'), 等待时间：20秒。
+2023-12-03 01:35:39.561 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', '//*[@data-qa="login-button"]')
+2023-12-03 01:35:41.550 | INFO     | MyTestFramework.common.base_page:get_text:92 - 获取元素的文本:('xpath', "//*[contains(text(),'Logged in as')]")
+2023-12-03 01:35:41.551 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', "//*[contains(text(),'Logged in as')]"), 等待时间：20秒。
+2023-12-03 01:35:41.582 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', "//a[@href='/logout']"), 等待时间：20秒。
+2023-12-03 01:35:41.603 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', "//a[@href='/logout']")
+2023-12-03 01:35:48.424 | INFO     | MyTestFramework.common.base_page:element_is_existence:97 - 判断元素是否存在:('xpath', "//*[@id='header']//img[@src='/static/images/home/logo.png']")
+2023-12-03 01:35:48.425 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', "//*[@id='header']//img[@src='/static/images/home/logo.png']"), 等待时间：20秒。
+2023-12-03 01:35:48.451 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', "//a[@href='/login']"), 等待时间：3秒。
+2023-12-03 01:35:48.476 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', "//a[@href='/login']")
+2023-12-03 01:35:49.171 | INFO     | MyTestFramework.common.base_page:find_element:37 - 尝试定位元素：('name', 'email')
+2023-12-03 01:35:49.206 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('name', 'email') 中输入文本125266480@qq.com。
+2023-12-03 01:35:49.379 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('name', 'password'), 等待时间：20秒。
+2023-12-03 01:35:49.617 | INFO     | MyTestFramework.common.base_page:input_text:85 - 在元素：('name', 'password') 中输入文本yes19900625。
+2023-12-03 01:35:49.661 | INFO     | MyTestFramework.common.base_page:find_element:25 - 等待元素可被点击：('xpath', '//*[@data-qa="login-button"]'), 等待时间：20秒。
+2023-12-03 01:35:49.697 | INFO     | MyTestFramework.common.base_page:click:57 - 点击元素：('xpath', '//*[@data-qa="login-button"]')
+2023-12-03 01:35:50.348 | INFO     | MyTestFramework.common.base_page:get_text:92 - 获取元素的文本:('xpath', "//p[text()='Your email or password is incorrect!']")
+2023-12-03 01:35:50.348 | INFO     | MyTestFramework.common.base_page:find_element:29 - 等待元素可见：('xpath', "//p[text()='Your email or password is incorrect!']"), 等待时间：20秒。
